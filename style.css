@@ -54,7 +54,7 @@ header {
 }
 
 .header_man > img{
-  width: 200px;
+  width:200px;
   padding:40px 0px 60px 0px;
 }
 
@@ -71,7 +71,7 @@ header {
 
 .header_button  {
   background-color: #E99002;
-  padding:15px 10px 15px 10px;
+  padding:15px 20px 15px 20px;
   border-radius: 10px;
   font-size: 200%;
   border:solid 2px white;
@@ -140,25 +140,79 @@ h3 {
 }
 /* Row 6 -- Flex */
 .section_sponso {
-  background-color: #EEEEEE;
-  grid-row: 6;
+  background: linear-gradient(1deg, rgb(174, 174, 174), rgb(124, 124, 124));
+  padding: 40px 150px 40px 150px;
 }
+
+.section_allSponso > li {
+  list-style-type: none;
+}
+
+.section_allSponso {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width:100px;
+}
+
+.sponso_productHunt {
+  width:150px;
+}
+
 
 /* Row 7 */
 .section_button {
   grid-row: 7;
   background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.section_button > p {
+  background-color: #165882;
+  padding:15px 30px 15px 30px;
+  border-radius: 10px;
+  font-size: 160%;
+  border:solid 2px white;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.section_button p:last-child {
+  background-color: #E99002;
 }
 /* Row 8 */
 
 footer {
   grid-row: 8;
-  display: flex;
   justify-content: space-around;
   background-color: #333333;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer_ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
 }
 
 .footer_ul > li {
-  display: inline;
+  list-style-type: none;
+  margin-left: 20px;
+  padding-left: 8px;
+  border-left: solid 1px white;
+}
+
+.footer_2017 > li {
+  list-style-type: none;
+}
+
+.footer_2017 {
+  display: flex;
+  justify-content: flex-end;
 }
