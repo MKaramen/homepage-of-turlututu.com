@@ -14,7 +14,7 @@ nav {
   grid-template-columns: 1fr 1fr;
   padding-left: 50px;
   padding-right: 50px;
-  font-size:120%
+  font-size:100%
 }
 .nav_menu {
   display:flex;
