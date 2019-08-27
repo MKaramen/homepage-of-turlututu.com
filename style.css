@@ -1,3 +1,87 @@
 body{
   font-family: 'Open Sans', sans-serif;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(8, auto);
+  background-color: red;
+}
+/* Row 1 */
+.nav_menu {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.nav_logIn {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.header_man {
+  width: 25%;
+  height:25%;
+}
+
+/* Row 2  Flex */
+header {
+  grid-row: 2;
+  grid-column: 1/span 2;
+}
+
+.header_man {
+
+}
+
+h1 {
+
+}
+
+.header_button {
+
+}
+
+/* Row 3 -- Flex */
+
+.section_slogan {
+  grid-row: 3;
+}
+
+/* Row 4 */
+.section_explanation {
+  grid-row: 4;
+}
+
+.explanation_left {
+  grid-column: 1/2;
+}
+
+.explanation_right {
+  grid-column: 2/3;
+}
+
+h3 {
+
+}
+
+.section2_buttonDiscu {
+
+}
+
+/* Row 5 flex */
+.section_innovative {
+  grid-row: 5;
+}
+/* Row 6 -- Flex */
+.section_sponso {
+  grid-row: 6;
+  background-color: blue;
+}
+
+/* Row 7 */
+.section_button {
+  grid-row: 7;
+}
+/* Row 8 */
+
+footer {
+  grid-row: 8;
 }
