@@ -5,7 +5,7 @@
 </ul>
 
 <h2> Preview du site </h2>
-<img src="assets/images/preview.png">
+<img src="assets/images/preview.png" width="50%" height="50%">
 
 <h2> Auteur </h2>
 Matis Karamenderes
