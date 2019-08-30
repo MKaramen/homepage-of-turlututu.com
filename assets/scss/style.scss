@@ -1,0 +1,31 @@
+$bgcolor_principal: blue;
+$fontcolor_main: white;
+
+@import "mixin";
+//Creer un flex box
+body {
+  display: grid;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  display: grid;
+  background-color: $bgcolor_principal;
+  grid : {
+    row: 1;
+    template-columns: 1fr 1fr;
+  }
+  .nav_menu {
+    grid-column: 1;
+    @include flex_box(space-around, center);
+    li {
+      list-style-type: none;
+    }
+  }
+  .nav_logIn {
+    grid-column: 2;
+    @include flex_box(flex-end, center);
+    padding-right: 50px;
+  }
+}

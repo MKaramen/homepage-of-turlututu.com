@@ -1,0 +1,6 @@
+// Creer une flex blox
+@mixin flex_box($justify_c, $align_c) {
+  display: flex;
+  justify-content: $justify_c;
+  align-items: $align_c;
+}

@@ -1,0 +1,49 @@
+body {
+  display: -ms-grid;
+  display: grid;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  background-color: blue;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+nav .nav_menu {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .nav_menu li {
+  list-style-type: none;
+}
+
+nav .nav_logIn {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 50px;
+}
+/*# sourceMappingURL=style.css.map */
