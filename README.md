@@ -5,7 +5,7 @@
 </ul>
 
 <h2> Preview du site </h2>
-<img src="assets/images/preview.png>
+<img src="assets/images/preview.png">
 
 <h2> Auteur </h2>
 Réalisé le 27 août 2019
