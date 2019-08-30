@@ -1,5 +1,9 @@
-$bgcolor_principal: blue;
+$bgcolor_principal: #1e93cc;
 $fontcolor_main: white;
+$fontcolor_seconde: #333333;
+$font: "Open Sans";
+
+@import "padding";
 
 @import "mixin";
 //Creer un flex box
@@ -7,11 +11,16 @@ body {
   display: grid;
   padding: 0px;
   margin: 0px;
+  font-family: $font, sans-serif;
+  text-align: center;
+  color: white;
 }
 
+// Row 1
 nav {
   display: grid;
-  background-color: $bgcolor_principal;
+  background-color: $fontcolor_seconde;
+  color: $fontcolor_main;
   grid : {
     row: 1;
     template-columns: 1fr 1fr;
@@ -27,5 +36,139 @@ nav {
     grid-column: 2;
     @include flex_box(flex-end, center);
     padding-right: 50px;
+  }
+}
+
+// Row 2
+header {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  background-color: $bgcolor_principal;
+  @extend %padding_L;
+
+  .header_man {
+    grid-column: 1;
+    @include flex_box(center, center);
+    img {
+      width: 200px;
+    }
+  }
+
+  .header_center {
+    grid-column: 2;
+    @include flex_box(center, center);
+    flex-direction: column;
+    img {
+      width: 200px;
+      padding-top: 32px;
+    }
+    p {
+      margin-bottom: 32px;
+      a {
+        @include make_button(#e99002);
+      }
+    }
+  }
+}
+
+// Row 3
+.section_slogan {
+  grid-row: 3;
+  color: $fontcolor_seconde;
+  background-color: $fontcolor_main;
+  @extend %padding_S;
+}
+
+// Row 4
+.section_explanation {
+  grid-row: 4;
+  display: grid;
+  grid-column: 1fr 1fr;
+  background-color: $bgcolor_principal;
+  text-align: justify;
+  @extend %padding_M;
+
+  .explanation_left {
+    grid-column: 1;
+    @extend %padding_M;
+    padding-right: 16px;
+    padding-left: 50px;
+  }
+
+  .explanation_right {
+    grid-column: 2;
+    @extend %padding_M;
+    padding-left: 16px;
+    padding-right: 50px;
+  }
+}
+
+// Row 5
+.section_innovative {
+  @extend .section_slogan;
+  grid-row: 5;
+}
+
+//Row 6
+.section_sponso {
+  background: -webkit-linear-gradient(
+    5deg,
+    rgb(111, 111, 111),
+    rgb(163, 163, 163)
+  );
+  background: linear-gradient(5deg, rgb(111, 111, 111), rgb(163, 163, 163));
+
+  @extend %padding_XL;
+  ul {
+    @include flex_box(space-around, center);
+    flex-direction: row;
+    list-style-type: none;
+    li {
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
+
+//Row 7
+.section_button {
+  grid-row: 7;
+  @include flex_box(center, center);
+  flex-direction: row;
+  @extend %padding_L;
+  p {
+    @include make_button(#165882);
+  }
+  .orange {
+    @include make_button(#e99002);
+  }
+}
+
+//Row 8
+footer {
+  grid-row: 8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: $fontcolor_seconde;
+  .footer_ul {
+    @include flex_box(flex-start, center);
+    flex-direction: none;
+    li {
+      list-style: none;
+      padding-left: 8px;
+    }
+  }
+
+  .footer_2017 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+  li {
+    list-style-type: none;
+    font-size: 80%;
+    border-left: 2px white;
   }
 }
