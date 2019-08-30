@@ -8,6 +8,8 @@
 <img src="assets/images/preview.png">
 
 <h2> Auteur </h2>
+Matis Karamenderes
+
 Réalisé le 27 août 2019
 
-<a href="https://mkaramen.github.io/homepage-of-turlututu.com/">Liens vers le site turlututu</a>
+<h3><a href="https://mkaramen.github.io/homepage-of-turlututu.com/">Liens vers le site turlututu</a></h3>
